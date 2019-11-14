@@ -104,7 +104,7 @@ export class AuthenticationService {
 
   public register(user: TokenPayload): Observable<any> {
       //console.log(user);
-      return this.http.post(`https://www.pokersportsleague.in/api/register`, user, {
+      return this.http.post(`http://localhost/psl_laravel_git/psl_backend/public/api/register`, user, {
         headers: {'Content-Type': 'application/json'}
       })
   }
@@ -112,7 +112,7 @@ export class AuthenticationService {
   public login(user: TokenPayload): Observable<any> {
     this.saveUser_email(user.email);
     const base = this.http.post(
-        `https://www.pokersportsleague.in/api/login`, 
+        `http://localhost/psl_laravel_git/psl_backend/public/api/login`, 
         {   email: user.email, password: user.password}, 
         {
             headers: {'Content-Type': 'application/json'}
@@ -139,7 +139,7 @@ export class AuthenticationService {
     if(this.user_email)
     {
       return this.http.post(
-        `https://www.pokersportsleague.in/api/user_details`, 
+        `http://localhost/psl_laravel_git/psl_backend/public/api/user_details`, 
         {   email: this.user_email}, 
         {
             headers: {'Content-Type': 'application/json'}
@@ -165,24 +165,24 @@ export class AuthenticationService {
 
  
  public fp(f): Observable<any> {
-  return this.http.post(`https://www.pokersportsleague.in/api/forgetpw`, f, {
+  return this.http.post(`http://localhost/psl_laravel_git/psl_backend/public/api/forgetpw`, f, {
     headers: {'Content-Type': 'application/json'}
   });
 }
 
  public otpfunc(f): Observable<any> {
-  return this.http.post(`https://www.pokersportsleague.in/api/verify_otp`, f, {
+  return this.http.post(`http://localhost/psl_laravel_git/psl_backend/public/api/verify_otp`, f, {
     headers: {'Content-Type': 'application/json'}
   });
 }
  public rpfunc(f): Observable<any> {
-  return this.http.post(`https://www.pokersportsleague.in/api/reset_password`, f, {
+  return this.http.post(`http://localhost/psl_laravel_git/psl_backend/public/api/reset_password`, f, {
     headers: {'Content-Type': 'application/json'}
   });
 }
 
 public change_password(f): Observable<any> {
-  return this.http.post(`https://www.pokersportsleague.in/api/change_password_user`, f, {
+  return this.http.post(`http://localhost/psl_laravel_git/psl_backend/public/api/change_password_user`, f, {
     headers: {'Content-Type': 'application/json'}
   });
 }
@@ -190,30 +190,30 @@ public change_password(f): Observable<any> {
  public sociallogin(user): Observable<any> {
 
   //console.log("socialemail====="+user.email);
-  // return this.http.post('https://www.pokersportsleague.in/api/social/',
+  // return this.http.post('http://localhost/psl_laravel_git/psl_backend/public/api/social/',
   //  { headers: {'Content-Type': 'application/json'}
   // }).pipe(
   //  catchError(this.handleError)
   //);
   this.saveUser_email(user.email);
-  return this.http.post(`https://www.pokersportsleague.in/api/social`, user, {
+  return this.http.post(`http://localhost/psl_laravel_git/psl_backend/public/api/social`, user, {
         headers: {'Content-Type': 'application/json'}
       });
 }
 
 public sendotp(f): Observable<any> {
-  return this.http.post(`https://www.pokersportsleague.in/api/send_otp`, f, {
+  return this.http.post(`http://localhost/psl_laravel_git/psl_backend/public/api/send_otp`, f, {
     headers: {'Content-Type': 'application/json'}
   });
 }
 public up_register(f): Observable<any> {
-  return this.http.post(`https://www.pokersportsleague.in/api/psl_register`, f, {
+  return this.http.post(`http://localhost/psl_laravel_git/psl_backend/public/api/psl_register`, f, {
     headers: {'Content-Type': 'application/json'}
   });
 }
 
 public up_register_landing(f): Observable<any> {
-  return this.http.post(`https://www.pokersportsleague.in/api/psl_register_landing`, f, {
+  return this.http.post(`http://localhost/psl_laravel_git/psl_backend/public/api/psl_register_landing`, f, {
     headers: {'Content-Type': 'application/json'}
   });
 }
@@ -234,18 +234,18 @@ public get_pro(f): Observable<any> {
     //console.log(f['buyin_'+i]);
  }
    
-  return this.http.post(`https://www.pokersportsleague.in/api/get_pro`, formData);
+  return this.http.post(`http://localhost/psl_laravel_git/psl_backend/public/api/get_pro`, formData);
 }
 
 public up_id(f): Observable<any> {
-  return this.http.post(`https://www.pokersportsleague.in/api/up_id`, f, {
+  return this.http.post(`http://localhost/psl_laravel_git/psl_backend/public/api/up_id`, f, {
     headers: {'Content-Type': 'application/json'}
   });
 }
 
 public up_link(f): Observable<any> {
 
-  return this.http.post(`https://www.pokersportsleague.in/api/up_link`, 
+  return this.http.post(`http://localhost/psl_laravel_git/psl_backend/public/api/up_link`, 
     {   email: f }, 
     {
         headers: {'Content-Type': 'application/json'}
