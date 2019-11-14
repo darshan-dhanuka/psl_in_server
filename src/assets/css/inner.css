@@ -1,0 +1,333 @@
+.table > thead > tr > th, .table > tbody > tr > td{border:none;}
+.table thead th span{display: block; padding: 10px 0; background: #e5f2eb}
+.table tbody td span{display: block; padding: 10px 0; background: #e9e9e9}
+.selectopt{width: 100%; background: #e5f2eb; height: 36px;padding: 5px 0}
+.selectopt select{width: 100%;padding-right: 20px; background: transparent; border:none; text-align: center;-moz-appearance: none;-webkit-appearance: none;-o-appearance: none;-ms-appearance: none;appearance: none; background:url(../images/drp-arrow.png) no-repeat right 5px center; }
+.opacity{opacity: 0; color: transparent;}
+.sitemap ul ul{padding-left: 10px}
+.inactive{background: grey;}
+/*.active{background: green;}*/
+#prev, #next{width: auto; padding: 5px;}
+.paginationBtn{ display: inline-block;}
+.paginationBtn li{display: inline-block;width: 35px;background: #fff;margin: 0 5px;cursor: pointer;box-shadow: 0px 0px 5px #909090 inset;border-radius: 5px;line-height: 35px;color: #8d8d8d;}
+.paginationBtn li.active{background: green; color: #fff}
+.tableBtn .customBtn{width: 100%; padding: 8px 5px 9px}
+.nopad{padding: 0}
+.popupContent{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); z-index: 2; background: #fff; padding: 5px;}
+.InnerCant{display: none;border: 3px solid green;padding: 20px;}
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+    padding: 2px;}
+ .table thead th span {padding: 5px 0;}
+.addDash::after{content: '-'; position: absolute; right: 0}
+.myActTitle{ float: left;  width: 30%;padding:10px 10px 10px 0; text-align: center;}
+.myActDetails{ float: right; width: 70%;padding:10px 0px 10px 10px; position: relative; margin-bottom: 0}
+.myActTitle span{padding: 10px;background: #e5f2eb; display: block; font-weight: bold;max-width:150px;}
+.myActDetails span{padding: 10px;background: #e9e9e9; display: block;}
+.fullWidth .myActTitle{width: 14.5%}
+.fullWidth .myActDetails{width: 85.5%}
+.clickingBtn{position: absolute;top: 20px; right: 10px; text-decoration: underline;}
+.fullWidth .attached{width: 50%; float: left;}
+.attached input{width: 100%;padding: 10px;border: none;}
+.fullWidth .forBtn{width: 34%}
+.fullWidth .forBtn #uploadBtn{width: 100%; right: 0; top: auto; position: absolute; padding: 10px;opacity: 0; cursor: pointer;}
+.myActDetails input, .myActDetails select, .myActDetails textarea{background-color:#e9e9e9; padding-left: 10px }
+.myActDetails input[disabled]{background-color: #f5f5f5; color:#999;}
+.myActDetails select[disabled]{background: #f5f5f5;color:#999;}
+.mobsetBtn .customBtn{margin-top: 10px;}
+.middleSecfont{font-size: 24px}
+.bOfd .innerTab, .leagueSec .innerTab { padding: 30px 0 0;}
+.bOfd .innerTab span, .leagueSec .innerTab span {font-size: 20px;}
+.setinCenter{float: none; display:block; margin: 0 auto}
+.msnStmnt p { font-size: 20px;}
+.tablesMob .table > tbody > tr > td::before{display: none;}
+    .tablesMob .table > tbody > tr > td span{vertical-align: top}
+    .tablesMob .table > tbody > tr > td span.dptadded{display: none}
+    .tablesMob .dptadded::before{display: none !important;}
+.psluserpic ul{margin-top: 72px;}
+.psluserpic ul li{min-height: 98px;}
+.psluserpiclft{padding-right: 0 !important; padding-left: 4px;}
+.psluserpicrgt{padding-left:0 !important; padding-right: 4px;}
+.teamSec .innerTab{background: none; padding: 0; max-height: none}
+.teamSec .txtname{font-size: 25px}
+.teamSec .nofloatblock{margin-right: -4px}
+.teamSec .globleHeading.text-center{text-align: center;}
+.inlineBlck{display: inline-block; vertical-align: middle; float: none}
+.setPosabs{position: absolute; right: 0}
+.headingMid{position: absolute; left: 0; right: 0;top: 50%; margin: auto; text-align: center; transform: translateY(-50%); -webkit-transform: translateY(-50%);}
+.pos-relative{position: relative;}
+.setonBtm{position: absolute;left: 50%; bottom: 0; margin:auto; transform: translateX(-50%); -webkit-transform: translateX(-50%); padding-left: 5px;width: auto;padding-right: 5px; padding-left: 5px;min-width: 160px }
+.teambanner{background: #000; min-height: 600px; padding: 150px 0 0}
+.teambanner .bannerMidSec{width: 100%; text-align: center;}
+.tmSocialIcn{width: 82px; height: 82px;margin: 5px; display: inline-block;}
+.facbookIcon{background: url(../images/socialicon.png) no-repeat left center; }
+.twitterIcon{background: url(../images/socialicon.png) no-repeat right center;}
+.socilaSec{padding: 30px 0 0;}
+#bengaluruteam{background: rgb(17,17,37); 
+background: -moz-linear-gradient(top,  rgba(17,17,37,1) 0%, rgba(58,57,126,1) 51%);
+background: -webkit-linear-gradient(top,  rgba(17,17,37,1) 0%,rgba(58,57,126,1) 51%);
+background: linear-gradient(to bottom,  rgba(17,17,37,1) 0%,rgba(58,57,126,1) 51%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#111125', endColorstr='#3a397e',GradientType=0 );
+}
+#chennaiteam{
+background: rgb(6,15,30);
+background: -moz-linear-gradient(top,  rgba(6,15,30,1) 0%, rgba(19,52,102,1) 51%);
+background: -webkit-linear-gradient(top,  rgba(6,15,30,1) 0%,rgba(19,52,102,1) 51%);
+background: linear-gradient(to bottom,  rgba(6,15,30,1) 0%,rgba(19,52,102,1) 51%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#060f1e', endColorstr='#133466',GradientType=0 );
+}
+.noDisplay{display: none}
+#gujaratteam{background: rgb(73,44,15); padding-top: 250px;
+background: -moz-linear-gradient(top,  rgba(73,44,15,1) 0%, rgba(248,148,50,1) 51%);
+background: -webkit-linear-gradient(top,  rgba(73,44,15,1) 0%,rgba(248,148,50,1) 51%);
+background: linear-gradient(to bottom,  rgba(73,44,15,1) 0%,rgba(248,148,50,1) 51%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#492c0f', endColorstr='#f89432',GradientType=0 );
+}
+#haryanateam{background: rgb(70,28,18);
+background: -moz-linear-gradient(top,  rgba(70,28,18,1) 0%, rgba(235,93,60,1) 51%);
+background: -webkit-linear-gradient(top,  rgba(70,28,18,1) 0%,rgba(235,93,60,1) 51%);
+background: linear-gradient(to bottom,  rgba(70,28,18,1) 0%,rgba(235,93,60,1) 51%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#461c12', endColorstr='#eb5d3c',GradientType=0 );}
+#kolkatateam .bannerMidSec{padding-top: 70px}
+#mumbaiteam{background: rgb(8,28,50);
+background: -moz-linear-gradient(top,  rgba(8,28,50,1) 0%, rgba(28,97,174,1) 51%);
+background: -webkit-linear-gradient(top,  rgba(8,28,50,1) 0%,rgba(28,97,174,1) 51%);
+background: linear-gradient(to bottom,  rgba(8,28,50,1) 0%,rgba(28,97,174,1) 51%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#081c32', endColorstr='#1c61ae',GradientType=0 );}
+#puneteam{background: rgb(73,73,73);
+background: -moz-linear-gradient(top,  rgba(73,73,73,1) 0%, rgba(60,154,108,1) 51%);
+background: -webkit-linear-gradient(top,  rgba(73,73,73,1) 0%,rgba(60,154,108,1) 51%);
+background: linear-gradient(to bottom,  rgba(73,73,73,1) 0%,rgba(60,154,108,1) 51%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#494949', endColorstr='#3c9a6c',GradientType=0 );}
+#rajasthanteam{background: rgb(34,5,7);
+background: -moz-linear-gradient(top,  rgba(34,5,7,1) 0%, rgba(114,18,25,1) 51%);
+background: -webkit-linear-gradient(top,  rgba(34,5,7,1) 0%,rgba(114,18,25,1) 51%);
+background: linear-gradient(to bottom,  rgba(34,5,7,1) 0%,rgba(114,18,25,1) 51%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#220507', endColorstr='#721219',GradientType=0 );}
+.teamSec .setonBtm{background: #007f3e;color: #fff; border-radius: 0;text-transform: uppercase;width: 164px;padding: 10px 0;
+    text-align: center;font-size: 18px; border: 1px solid transparent;display: inline-block;vertical-align: middle;}
+
+.selectedTeam{margin-top: 80px}
+.midFont{font-size: }
+p.subTitle{width: 100%}
+.paraHeghText{font-size: 26px;}
+.paramidText{font-size: 20px}
+.fantasyPage .subTitle{margin: 40px 0 60px}
+.namesAdd{margin: 20px 0 50px;font-size: 20px;}
+.proHere::before{content:'';width:50%;height:10px;border-top:1px solid #000;border-left:1px solid #000;position: absolute;right: 0;top:-25px;}
+.liveHere::before,.onlineHere::before{content:'';width:100%;height:10px;border-top:1px solid #000;position:absolute;right:0;top:-25px;}
+.liveHere::after,.onlineHere::after{height: 10px;width: 1px; background: #000; position: absolute;left: 0;right: 0;top: -25px;content:'';margin:auto;}
+.wildHere::before{content:'';width:50%;height:10px;border-top:1px solid #000;border-right:1px solid #000;position: absolute;left: 0;top:-25px;}
+.mentorHere::after{content:'';margin: auto;left: 0;right: 0;position: absolute;height: 10px;width: 1px;background: #000;bottom: 25px;}
+.bgBtn{font-size: 28px;width: auto;padding: 10px 40px}
+.midBtn{width: auto;padding:5px 20px; margin: 20px;font-size: 24px}
+.m30{margin-bottom: 20px}
+.fantasyPopup{position:fixed;background: rgba(0,0,0,0.8);left: 0;top:0;width: 100%;height: 100%;z-index: 10000;display: none;}
+/*.teamtable{max-width: 900px;position:absolute;width:100%;left:50%;margin:auto;top:50%;padding:10px;background:#fff;max-height: 90vh;overflow:auto;transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%);min-height: 40vh}*/
+.teamtable{}
+
+.teamtable > ul > li{width: 20%;float: left; text-align: center;}
+.teamtable > ul > li .tableHeadSec{background:#535353;padding:5px;color:#fff; position: relative;}
+.teamtable > ul > li .tableHeadSec:hover{background: #007f3e}
+.teamtable > ul > li .tableHeadSec span{display: block;}
+.teamtable > ul > li > ul > li{width: 100%;padding: 5px; cursor: pointer;}
+.teamtable > ul > li > ul > li.active{background:#007f3e;color:#fff;}
+.teamtable > ul{background: #ededed;overflow: hidden;border: 1px solid #444;}
+.teamtable > ul > li{border-right: 1px solid #444;}
+.teamtable > ul > li:last-child{border:none;}
+.teamtable .txtfield{width: 300px;margin: auto;}
+.submitBtn button { min-width: 30%;}
+.teamtable .txtfield input[type="text"]{background: #fff;border: 1px solid #444}
+.closeParent {background: #d75a4a;color: #fff;padding: 0 4px;width: 20px;height: 20px;line-height: 18px;border-radius: 50%;right: -26px;top: 0;bottom: 0;font-size: 15px;cursor: pointer;display: inline-block;vertical-align: middle;margin-left: 10px }
+.namesAdd > span{position: relative;}
+.teamtable span{text-align: center;}
+.teamtable h3{padding: 20px;background:#007f3e;color:#fff;margin: 0}
+/*.teamtable .table{border: 1px solid #000;}*/
+/*.teamtable .table th{padding: 0;background: #535353;border: 1px solid #000;border-top:none;border-left: none}*/
+/*.teamtable .table th span{background: none;color: #fff}*/
+/*.teamtable .table td{padding: 0;background: #ededed;border: 1px solid #000;border-top:none;border-left: none}*/
+.teamtable .table td:last-child,.teamtable .table th:last-child{border-right:none;}
+.teamtable .table tr:last-child td{border-bottom:none;}
+.teamtable .table td:first-child{width: 10%}
+.teamtable .table td:nth-child(2){width: 40%}
+.teamtable .table td:nth-child(3){width: 40%}
+.teamtable .table td:nth-child(4){width: 10%}
+.teamtable .table{margin-bottom: 0}
+.teamtable .table.userTable{border-top:none;}
+.teamtable .table.userTable td span{background:#535353;color:#fff;}
+/*.tableSec{max-height:calc(90vh - 132px);overflow: auto;}*/
+.teamtable select{position: absolute;right: 20px;top:17px;    background: #fff url(../images/select-arrow.png) no-repeat right 6px center / 17px 100%;border: 1px solid #333;border-radius: 7px;padding: 2px 27px 2px 8px;-webkit-appearance: none;-moz-appearance:none;appearance:none;width: 100px;}
+span.addNum {width: 30px;height: 30px;margin: auto;border: 1px solid #fff;border-radius: 50%;padding: 2px 0;}
+.teamtable .table.tableList{border-color: #535353}
+.teamtable .table.tableList td{width: auto;text-align:center; border: 3px solid #fff; background: #e9e9e9;/*;border-right: none;border-color: #535353;padding: 10px 10px;background: #ededed*/}
+.teamtable .table.tableList td:last-child{text-align: center;}
+.tableList td a {background: #007f3e;color: #fff;width:30px;height:30px;border-radius: 50%;text-align: center;font-size: 30px;line-height: 30px;display:inline-block;}
+.teamtable .table.tableList tr td .removeVal{display: none;background: #f55555;}
+.teamtable .table.tableList tr.active td .selectVal{display: none;}
+/*.teamtable .table.tableList tr.active td{background: #d4ded9}*/
+.teamtable .table.tableList tr.active td .removeVal{display: inline-block;}
+.removeVal{display: none;}
+.selectInfo{background: #ededed;padding: 10px; margin-top: 2px;}
+.teamtable ul{margin-bottom: 0;box-shadow: 1px 5px 10px rgba(0,0,0,0.4);position: relative;border-bottom: none}
+.fantasyPlayers{display: none;}
+.tblWrapper{max-height: 270px; overflow: hidden; overflow-y: auto;}
+.fantasyPlayers.active{display: block;}
+.clTab.active{background: #007f3e !important;}
+.clTab{cursor: pointer;}
+.selectedTeam .txtfield{margin-top: 50px}
+.namesAdd > span{display: block;}
+.tableHeadSec.active::after{position: absolute;content: ''; width: 100%;background: #fff;height: 5px;right: 0;bottom: 0px;}
+.viewTeam{display: none;position: relative;padding: 10px;cursor: pointer;}
+.viewTeam::before{content:''; width: 16px; height: 16px;border: 2px solid #007f3e;display: block;margin: auto;transform: rotate(45deg);-webkit-transform: rotate(45deg);border-bottom: none;border-right: none;}
+#createTeam .selectedTeam{display: block}
+.teamListprev{display: none;position: relative;padding: 10px; box-shadow: 0px 5px 8px rgba(0,0,0,0.4);cursor: pointer;}
+.teamListprev:before{content:''; width: 16px; height: 16px;border: 2px solid #007f3e;display: block;transform: rotate(45deg);-webkit-transform: rotate(45deg);border-top: none;border-right: none;float: left;}
+.btnteamSec{max-width: 300px;margin: auto}
+.btnteamSec .submitBtn button{width: 100%;margin: 0px 0;}
+.dontSubmit{opacity: 0.3; cursor: default;}
+.dontSubmit:hover{background: #007f3e;color: #fff}
+
+.userTable{width: 100%; left: 0;bottom: 0; background: #fff;padding-top: 5px }
+
+.userTable .col-xs-12 div{background:#fff;display: inline-block;width: calc(25% - 4px);text-align: center;border: 1px solid #007f3e;padding: 7px 2px; white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.deactiveBtn{background:grey;cursor:default;}
+.deactiveBtn:hover{background:grey;color:#fff;border-color:grey;}
+.setspan > span{display: block;font-size: 16px;font-weight: bold}
+.setspan > span + span{font-size: 14px;font-weight: normal;}
+.tblWrapper .table th, .tblWrapper .table td{width: 40%}
+.tblWrapper .table th:last-child, .tblWrapper .table td:last-child{width: 20%}
+.fantasyPage{position: relative;padding-bottom: 70px;margin-bottom: 10px }
+
+
+
+@media only screen and (max-width: 1199px) {
+.myActTitle{width: 34%}
+.myActDetails{width:66%;}
+.fullWidth .myActTitle{width: 16.5%}
+.fullWidth .myActDetails{width: 83.5%}
+.fullWidth .attached{width: 50.5%}
+.fullWidth .forBtn{width: 32%}
+}
+@media only screen and (max-width: 992px) {
+.sch-livQua, .sch-onQua, .draft{padding-top: 10px}
+.table > thead > tr > th{display: none; padding:10px 0}
+.sch-livQua .table > thead > tr > th:first-child{display: block; width: 100%}
+.table > tbody > tr > td{display: block; text-align: left; padding:0; border-bottom: 1px solid #ccc;}
+.table > tbody > tr:nth-child(odd){background: #e9e9e9}
+.table > tbody > tr > td span{display:inline-block; width: 50%;padding: 10px; text-align: left; background:transparent;}
+.table > tbody > tr > td::before{content: ''; width: 50%;display:none;padding: 10px; font-weight: bold; vertical-align: middle;}
+.table > tbody > tr > td span::before{content:':'; position: relative;left: -15px; font-weight: bold;display:inline-block}
+.table > tbody > tr > td span.dptadded::before{display:none;}
+
+.sch-livQua .table > tbody > tr > td:first-child::before{content: 'City';}
+.sch-livQua .table > tbody > tr > td:nth-child(2)::before{content: 'Venue';}
+.sch-livQua .table > tbody > tr > td:nth-child(3)::before{content: 'Tournament Name';}
+.sch-livQua .table > tbody > tr > td:nth-child(4)::before{content: 'Date';}
+.sch-livQua .table > tbody > tr > td:nth-child(5)::before{content: 'Time';}
+.sch-livQua .table > tbody > tr > td:nth-child(6)::before{content: 'Entry Criteria';}
+.sch-livQua .table > tbody > tr > td:nth-child(7)::before{content: 'Winnings';}
+.sch-onQua .table > tbody > tr > td:nth-child(1)::before{content: 'Tournament Name';}
+.sch-onQua .table > tbody > tr > td:nth-child(2)::before{content: 'Date';}
+.sch-onQua .table > tbody > tr > td:nth-child(3)::before{content: 'Time';}
+.sch-onQua .table > tbody > tr > td:nth-child(4)::before{content: 'Entry Criteria';}
+.sch-onQua .table > tbody > tr > td:nth-child(5)::before{content: 'Winnings';}
+
+.live_leader .table > thead > tr > th:last-child{display: block; width: 100%}
+.live_leader .table > tbody > tr > td:first-child::before{content: 'Rank';}
+.live_leader .table > tbody > tr > td:nth-child(2)::before{content: 'Username';}
+.live_leader .table > tbody > tr > td:nth-child(3)::before{content: 'Leaderboard Points';}
+.live_leader .table > tbody > tr > td:nth-child(4)::before{content: 'City';}
+.online-board .table > tbody > tr > td:first-child::before{content:'Rank';}
+.online-board .table > tbody > tr > td:nth-child(2)::before{content:'Adda52 Username';}
+.online-board .table > tbody > tr > td:nth-child(3)::before{content:'Leaderboard Points';}
+
+.myAccount{font-size: 14px; }
+.myActTitle span{font-weight: normal; padding: 10px 0}
+.tablesMob .table > tbody > tr > td span.dptadded{display: inline-block}
+.psluserpic{display: none}
+.setPosabs{position: relative;}
+.teamtable .table.tableList td{display: table-cell;}
+.teamtable > ul > li .tableHeadSec span{font-size: 14px;}
+#daywiseLeaderboard .teamtable .table td,#cumulativeLeaderboard .teamtable .table td{width: 100%;border-right:none }
+.teamtable h3{background: #007f3e}
+.teamtable .table{border: none}
+.teamtable .table td{background:transparent;border-bottom: 1px solid #cccccc }
+.selectInfo{border-bottom:1px solid #ccc; border-left:none;border-right: none }
+.teamtable .table.tableList td{ border-color: #cccccc;}
+.tblWrapper .table th{display:table-cell;padding:0;border: 2px solid #ccc;border-bottom: none;}
+.tblWrapper .table th:first-child{border-left: none}
+.tblWrapper .table th:last-child{border-right: none}
+}
+@media only screen and (max-width: 767px) {
+.myActTitle, .fullWidth .myActTitle{width: 30%; }
+.myActTitle span{max-width: none;min-width: 110px;}
+.myActDetails, .fullWidth .myActDetails{width:70%;}
+.fullWidth .attached{width: 70%}
+.fullWidth .forBtn{width: 70%}
+.inlineBlck{margin: 15px 0}
+.teamSec .globleHeading { text-align: center; padding: 20px 0}
+.headingMid{position: relative;left: auto; right: auto;top: auto;transform: translateY(0); -webkit-transform: translateY(0);padding: 20px 0;}
+.customBtn{max-width: 100%; min-width: auto; width: 100%}
+.player-appli .customBtn{width:164px;}
+.teamSec .nofloatblock{margin-right: 0}
+.teambanner{padding: 50% 0 10px}
+.teambanner .bannerMidSec{max-width: 350px; margin: 0 auto;}
+.teamDetails{margin-bottom: 10px }
+.teamtable > ul > li .tableHeadSec span { font-size: 12px;}
+.midBtn{margin: 10px 0;width: 49%; font-size: 20px;}
+.teamtable .txtfield{width: 100%}
+.teamtable .table.tableList td{padding:10px 5px;font-size: 13px;}
+.selectInfo{padding: 10px 5px;font-size: 13px}
+span.addNum {width: 25px;height: 25px;}
+.teamtable .table.userTable td {background: #535353;}
+.teamtable .table tr:last-child td{border-bottom: 1px solid #ccc}
+.fantasyPage .subTitle{margin: 20px 0;font-size: 20px; padding: 0}
+.paraHeghText{font-size: 18px}
+.paramidText{font-size: 16px}
+.mentorHere img{max-width: 200px}
+.selectedTeam {margin-top: 30px;}
+.liveHere::before{right: auto;left: 0;width: 50%}
+.onlineHere::before, .onlineHere::after,.wildHere::before,.wildHere::after{display: none;}
+.proHere img, .liveHere img, .onlineHere img, .wildHere img{max-width: 150px;width: 100%;}
+.namesAdd{margin:10px 0 30px;}
+.proHere::before, .liveHere::before, .liveHere::after{top: -15px;}
+.mentorHere::after{bottom: 15px;}
+.proHere,.liveHere,.onlineHere,.wildHere{float: none;display: inline-block;vertical-align: top;width: calc(50% - 4px)}
+.proHere::before{right: -2px;}
+.liveHere::before{left: -2px}
+#createTeam .selectedTeam{display: none}
+.teamtable .txtfield{margin:30px 0 10px }
+.viewTeam{display: block;}
+.btnteamSec{background: #535353;padding: 10px}
+#createTeam{padding: 0}
+.btnteamSec{max-width: 100%}
+.userTable div span{font-size: 13px;}
+.userTable .container{padding:0;}
+.teamtable > ul > li .tableHeadSec{min-height: 70px}
+
+}
+@media only screen and (max-width: 640px) {
+.paginationBtn{display: none}
+.popupContent{width: 90%}
+.popupContent p{font-size: 14px}
+
+
+}
+@media only screen and (max-width: 480px) {
+.teamSec .innerTab .customBtn{font-size: 12px}	
+
+}
+@media only screen and (max-width: 420px) {
+	.myActTitle, .fullWidth .myActTitle{width: 40%; }
+	.myActDetails, .fullWidth .myActDetails{width:60%;}
+	.myActDetails input, .myActDetails select, .myActDetails textarea{font-size: 12px}
+	.myActTitle span, .myActDetails span{font-size: 12px}
+	.myActDetails select{ padding:10px; background-position: right 5px center; background-size: 16px 10px;   }
+	.mobsetBtn .customBtn{font-size: 14px !important; margin-top: 10px; padding: 8px 0 }
+	.teamtable h3{font-size: 20px;padding: 15px 5px;text-align: left;}
+	.teamtable select{width: 80px;font-size: 16px; top: 10px;}
+	#cumulativeLeaderboard .teamtable h3{text-align: center;}
+	.midBtn{width: 100%}
+	.createBtnSec{margin-bottom: 10px}
+
+
+}

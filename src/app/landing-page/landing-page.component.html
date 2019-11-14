@@ -1,0 +1,232 @@
+<!-- Main Carousel Section Start -->
+<section>
+    <div id="main-slide" class="carousel slide" data-ride="">
+        
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="assets/img/background-img02.jpg" alt="First slide">
+                <div class="carousel-caption d-md-block">
+                    <!--p class="fadeInUp wow" data-wow-delay=".6s">Poker Sports League</p>
+                                    <h1 class="wow fadeInDown heading" data-wow-delay=".4s">India's first Poker League</h1>
+                                    <a href="javascript:void(0);" class="fadeInUp wow btn btn-border btn-lg" data-wow-delay=".8s" (click)="togglereg()" id="reg">Register Now! </a>
+                                    <div *ngIf="!auth.isLoggedIn() && !user" class="nav-item">
+                                        <button (click)="toggle()" id="btToggle" class="fadeInRight wow btn btn-border btn-lg" data-wow-delay=".6s">Login </button>
+                                    </div-->
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="assets/img/slider/slide2.jpg" alt="Second slide">
+                <div class="carousel-caption d-md-block">
+                    <!--p class="fadeInUp wow" data-wow-delay=".6s">Poker Sports League</p>
+                                    <h1 class="wow bounceIn heading" data-wow-delay=".7s">11 Teams Around India Compete for the Ultimate Prize</h1>
+                                    <a href="javascript:void(0);" class="fadeInUp wow btn btn-border btn-lg" data-wow-delay=".8s" (click)="togglereg()" id="reg">Register Now! </a>
+                                    <div *ngIf="!auth.isLoggedIn() && !user" class="nav-item">
+                                        <button (click)="toggle()" id="btToggle" class="fadeInRight wow btn btn-border btn-lg" data-wow-delay=".6s">Login </button>
+                                    </div-->
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="assets/img/slider/slide3.jpg" alt="Third slide">
+                <div class="carousel-caption d-md-block">
+                    <!--p class="fadeInUp wow" data-wow-delay=".6s">Poker Sports League</p>
+                                    <h1 class="wow fadeInUp heading" data-wow-delay=".6s">Register Now for Season3!</h1>
+                                    <a href="javascript:void(0);" class="fadeInUp wow btn btn-border btn-lg" data-wow-delay=".8s" (click)="togglereg()" id="reg">Register Now! </a>
+                                    <div *ngIf="!auth.isLoggedIn() && !user" class="nav-item">
+                                        <button (click)="toggle()" id="btToggle" class="fadeInRight wow btn btn-border btn-lg" data-wow-delay=".6s">Login </button>
+                                    </div-->
+                </div>
+            </div>
+        </div>
+       
+    </div>
+
+</section>
+<!-- Main Carousel Section End -->
+
+<!--Static register form Start-->
+<div class="psl_banner_registerbg" style="top:220px;left:67%;">
+    <div class="psl_banner_registernow" id="reg_modal">
+        <h3>Register for Free!!!</h3>
+        <div id="scrollId" style="color: #dc3545;" [innerHTML]="htmlStr">
+        </div>
+        <div id="email_err" style="color: #dc3545;display:none;" > This email is already taken . Please <a href = "https://www.pokersportsleague.com/" >login here</a>
+        </div>
+        <!--FORM STEP 1-->
+        <form name="form" (ngSubmit)="f.form.valid && register_next(f)" #f="ngForm" novalidate>
+
+            <div class="form-group error_form_group">
+                <input type="text" class="form-control checkIfvalid" placeholder="Username" attr-span="#userName_span"
+                    attr-label="#userName_label" name="uname" id="uname" [(ngModel)]="credentials.uname"
+                    #uname="ngModel" [ngClass]="{ 'is-invalid': f.submitted && uname.invalid }" required
+                    autocomplete="off" (keypress)="keyPressspace($event)">
+                <div *ngIf="f.submitted && uname.invalid">
+                    <span *ngIf="uname.errors.required" class="errorClass" id="userName_span"
+                        style="display: inline;">Username is required</span>
+                </div>
+            </div>
+
+            <div class="form-group error_form_group">
+                <input type="email" class="form-control checkIfvalid" placeholder="Email" attr-label="#email_label"
+                    attr-span="#email_span" name="email" [(ngModel)]="credentials.email" #email="ngModel"
+                    [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" required email>
+                <div *ngIf="f.submitted && email.invalid" class="invalid-feedback">
+                    <span *ngIf="email.errors.required" class="errorClass" id="email_span">Email is required</span>
+                    <span *ngIf="email.errors.email" class="errorClass" id="email_span">Invalid Email</span>
+                </div>
+            </div>
+            <div class="form-group" id="phone_label">
+                <input type="text" class="form-control checkIfvalid" placeholder="Phone number"
+                    attr-label="#phone_label" attr-span="#phone_span" name="phone" [(ngModel)]="credentials.phone"
+                    #phone="ngModel" [ngClass]="{ 'is-invalid': f.submitted && phone.invalid }" required minlength="10"
+                    maxlength="10" phone (keypress)="keyPress($event)">
+                <div class="sendotp_btn" id="sendotp_btn" (click)="sendotp_func(phone)">Send OTP</div>
+                <span style="display:none" class="sucessClass" id="otp_sent_span" [innerHTML]="sendoptStr"></span>
+                <span style="display:none" class="sucessClass" id="otp_sent_error" [innerHTML]="sendoptStr"></span>
+                <div *ngIf="f.submitted && phone.invalid" class="invalid-val">
+                    <span *ngIf="phone.errors.required" class="errorClass" id="phone_span">Phone Empty</span>
+                    <span *ngIf="phone.errors.minlength" class="errorClass" id="phone_span">Invalid Phone</span>
+                    <span *ngIf="phone.errors.maxlength" class="errorClass" id="phone_span">Invalid Phone</span>
+                </div>
+
+            </div>
+
+            <div class="form-group" id="otp_label">
+                <input type="text" class="form-control" placeholder="Enter OTP" attr-label="#otp_label"
+                    attr-span="#otp_span" autocomplete="off" name="otp_text" id="otp_text" ngModel #otp_text="ngModel"
+                    [ngClass]="{ 'is-invalid': f.submitted && otp_text.invalid }" required
+                    (keypress)="keyPress($event)">
+                <span style="display:none" class="errorClass" id="otp_valid_span" [innerHTML]="validotpStr"></span>
+                <div *ngIf="f.submitted && otp_text.invalid" class="invalid-val">
+                    <span *ngIf="otp_text.errors.required" class="errorClass" id="otp_span">Otp Empty</span>
+                </div>
+
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" name="terms" [ngModel]="credentials.terms" required
+                        #terms="ngModel"><span>I agree to the <a href="javascript:void(0);" (click)="showterms()"
+                            id="btToggle">Terms of Use </a>&amp; I am above 18 years. </span></label>
+
+                <div *ngIf="f.submitted && terms.invalid" class="invalid-val">
+                    <span *ngIf="terms.errors.required" class="errorClass" id="confirm_check_span">Please Confirm
+                        Terms</span>
+                </div>
+            </div>
+				
+			
+            <div class="form-group mb-0 text-center">
+                <button type="submit" class="btn signup_btn">SUBMIT</button>
+            </div>
+        </form>
+    </div>
+
+</div>
+<!--Static register form End-->
+
+<!-- About Section Start -->
+<section id="" class="section-padding" style="background:#f3f4f3">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title-header text-center">
+                    <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">About Us</h1>
+                    <p class="wow fadeInDown" data-wow-delay="0.2s">Poker Sports League is India’s first poker league.
+                        The idea behind PSL is to sportify the game of poker through a unique, team based format. This
+                        is the only sports format where each team has a combination of professionals and amateurs.
+                        Absolutely anybody who knows the basics of poker - can play a series of on-ground or online
+                        poker games to secure a spot in this India wide poker league. All for FREE. We have big prize
+                        pools, no entry fee and a hell of a competition ahead. <br> Poker Sports League is the world’s
+                        largest poker league in terms of Prizepool and Participation. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About Section End -->
+<div style="clear: both;"></div>
+<div id="main-slide" class="carousel slide" data-ride="carousel" style="width: 100%;">
+    <div class="carousel-inner">
+        <div class="">
+            <img class="d-block w-100" src="assets/img/How-to-Regis.jpg" alt="First slide">
+                
+        </div>
+
+    </div>
+</div>
+
+<!-- Schedule Section Start -->
+<app-event-schedule-landing></app-event-schedule-landing>
+<!-- Schedule Section End -->
+
+
+<!--How to apply section-->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="contentContainer">
+                    <div class="custom">
+                        <h3 class="common-heading text-center">HOW TO APPLY</h3>
+                        <div class="content-box" style="text-align: center;">
+                            <p style="font-size: 18px;">Online Qualifiers start on November 14th, 2019 on adda52.com . There will be a total of 72 online games out of which a player is permitted to play a maximum of 18 . 100 % of players will be awarded leaderboard points . <br><br> Post the 72 qualifiers the top 90 players make it to the leaderboard
+                            </p>
+                            <BR>
+
+                        </div>
+                        <div class="container">
+                            <div class="row"  >
+                                <div class="col-12">
+
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-xs-12" style="margin: 0 auto;" > 
+                                    <div class="blog-item">
+                                        <div class="blog-image">
+                                            <a>
+                                                <img class="img-fluid" routerLink="/qualifier"
+                                                    routerLinkActive="router-link-active" href='#top'
+                                                    src="assets/img/qualifier.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="descr">
+
+
+                                            <div class="col-xs-12 text-center">
+                                                <a href="javascript:void(0);" (click)="regstatic()"
+                                                    class="btn btn-common" style="color: #fff">BE A QUALIFIER</a>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div style="display:none" id="loader_show" class="toggle-form">
+        <app-loader-div></app-loader-div>
+    </div>
+    
+</section>
+<!--How to apply section end-->
+<div id="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="site-info">
+                    <p>	&copy; Poker Sports League. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

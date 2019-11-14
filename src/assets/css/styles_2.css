@@ -1,0 +1,465 @@
+@font-face {
+	font-family: 'Changa-Regular';
+	src: url('fonts/Changa-Regular.eot');
+	src: local('â˜º'), url('fonts/Changa-Regular.woff') format('woff'), url('fonts/Changa-Regular.ttf') format('truetype'), url('fonts/Changa-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Changa-Bold';
+	src: url('fonts/Changa-Bold.eot');
+	src: local('â˜º'), url('fonts/Changa-Bold.woff') format('woff'), url('fonts/Changa-Bold.ttf') format('truetype'), url('fonts/Changa-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Changa-Light';
+	src: url('fonts/Changa-Light.eot');
+	src: local('â˜º'), url('fonts/Changa-Light.woff') format('woff'), url('fonts/Changa-Light.ttf') format('truetype'), url('fonts/Changa-Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+*{margin: 0; padding: 0; list-style: none;font-family: 'Changa-Regular';}
+img{max-width: 100%;}
+a, a:hover, a:active, a:focus, .btn:hover{color: inherit; text-decoration: none;}
+body{overflow-x:hidden; font-size: 18px}
+.btn:focus{color: #fff}
+.header{position: absolute;top: 0;left: 0;width: 100%;z-index: 9999;padding: 43px 0 0;}
+.loginSec{ float: right; width: 100%}
+.loginSec ul{float:right; color: #fff; font-size: 14px}
+.loginSec ul li{display: inline-block;}
+.logs li:first-child{border-right: 1px solid #fff;}
+.logs li a{padding:5px 10px; text-transform: uppercase; display: block;letter-spacing: 2px;}
+.social li a i{ font-size: 16px; color: #767a74}
+.social li a{ padding: 5px; color: #000; width: 28px; height: 28px;display: block;text-align: center;}
+.fbIcn{background: url(../images/nextprevArrow.png) no-repeat left -50px; }
+.gplusIcn{background: url(../images/nextprevArrow.png) no-repeat -35px -50px }
+.twitIcn{background: url(../images/nextprevArrow.png) no-repeat -35px -85px}
+.navSec{ float: right;margin-top: 10px; width: 100%; font-size: 14px;}
+.navSec ul{width: 100%; float: right; text-align: right;margin: 20px 0 0;}
+.navSec ul li{ display: inline-block; color: #fff;  position: relative;}
+.navSec ul li a{padding: 5px;font-size: 13px; text-transform: uppercase;letter-spacing: 2px;}
+.navSec ul li a + span{display: none;}
+.imgSlider{ min-height: 767px; padding: 285px 0 0}
+
+.bannerMidSec{width: 765px; margin: 0 auto;text-align: center; color: #fff}
+.bannerMidSec h2{font-size: 72px;text-transform: uppercase; margin-bottom: 110px;font-family: 'Changa-Bold'; line-height: 70px;}
+.customBtn{ background: #007f3e; color: #fff; border-radius: 0; text-transform: uppercase; width: 164px; padding: 10px 0; text-align: center; font-size: 18px; border: 1px solid transparent}
+.customBtn:hover{border-color:#007f3e; background: #fff; color: #007f3e}
+.spclftAlgn .bannerMidSec{text-align: left; margin: 0}
+.spclftAlgn .bannerMidSec h2{margin-bottom: 25px}
+.clr{ clear: both }
+section{padding: 56px 0}
+section.banner{padding: 0}
+.martb-40{margin: 40px 0}
+.pdtb-40{padding: 40px 0}
+.innerTab{width: 100%; padding: 30px 60px; background:#007f3e; text-align: center;max-height: 222px;}
+.innerTab span{display: block; color: #fff; font-size: 17px; text-transform: uppercase;font-family: 'Changa-Light';}
+.innerTab .num{ font-size: 42px; font-family: 'Changa-Bold'}
+.abtpsl{ background: url(../images/pslimg.jpg) no-repeat center center / cover; }
+.abtpsl{ color: #fff;}
+.abtpsl p{ padding: 25px 50px;  font-size: 24px;margin-bottom: 30px; font-family: 'Changa-Light';}
+.abtpsl .customBtn{ margin-right: 15px }
+.globleHeading{text-transform: uppercase; font-size: 48px; text-align:center; font-family: 'Changa-Bold'; margin-top: 0}
+.tabContent{ position: relative;}
+.tabContent a{display: block;}
+.tabTitle{margin:auto;background: rgba(0,0,0,0.6); width: 100%; position: absolute;bottom: 0;padding: 10px;font-size: 20px;text-transform: uppercase; left: 0;right: 0; line-height: 30px; color: #fff;}
+.globlegreen{ color:#007f3e }
+.globleRed{color:#d71921;}
+.rgstSec .globleHeading{margin-bottom: 45px;}
+.meet-cpt{background: url(../images/meet-bgImg.jpg) no-repeat center center / cover;}
+.pslgall{background: url(../images/pslgallbg.jpg) no-repeat center center / cover;}
+.owl-carousel .owl-item img{ width: auto;    margin: 0 auto;}
+.pslfeeds ul li{width: 100%; float: left; margin: 0; padding: 0; color: #fff; font-size: 18px; font-family: 'Changa-Light'}
+.pslfeeds > ul > li{margin: 10px 0}
+.pslfeeds ul li ul li.icns{width: 10%;padding: 0 10px}
+.pslfeeds ul li ul li.feedcnts{width: 80%; padding: 0 10px}
+.pslfeeds ul li ul li.feedtims{width: 10%; padding: 0 10px}
+.globlewhite{color: #fff}
+.footerNav{background: #7f7f7f; width: 100%; padding: 10px 0; float: left;}
+.allrights{width: 100%; float: left; padding: 10px 0; background: #cccccc; font-size: 14px}
+.footerNav ul{margin: 0; padding-right: 15px; padding-left: 15px;}
+.footerNav li{display: inline-block;padding: 0 10px; color: #fff}
+.owl-theme .owl-nav{text-align: center; margin-top: 40px}
+.owl-theme .owl-nav .owl-prev, .owl-theme .owl-nav .owl-next{background: url(../images/nextprevArrow.png) no-repeat left top; text-indent: 45px;width: 28px;overflow: hidden;padding: 7px; display: inline-block; margin-right: 10px}
+.owl-theme .owl-nav .owl-next{ background-position: right top }
+.imgName{ text-align: center; margin-top: 20px; font-size: 24px; opacity: 0; transition: .3s all; -webkit-transition: .3s all; transform: scale(.6); -webkit-transform: scale(.6); position: relative;top: -40px}
+.center .imgName{ opacity: 1;transform: scale(1); -webkit-transform: scale(1); top:0px}
+.meet-cpt .owl-carousel .owl-item{transition: .3s all;-webkit-transition: .3s all;}
+.meet-cpt .owl-carousel .owl-item .item img {transform: scale(0.4); -webkit-transform: scale(0.4);transition: .3s all;-webkit-transition: .3s all;}
+.meet-cpt .owl-carousel .active .item img{ transform: scale(0.6); -webkit-transform: scale(0.6); margin-left: 64px;}
+.meet-cpt .owl-carousel .active + .active .item img{ transform: scale(0.8); -webkit-transform: scale(0.8); margin-left: 8px;}
+.meet-cpt .owl-carousel .active + .active + .active + .active .item img{margin-left: -10px;}
+.meet-cpt .owl-carousel .active + .active + .active + .active + .active .item img{transform: scale(0.6); -webkit-transform: scale(0.6);margin-left: -64px;}
+.meet-cpt .owl-carousel .active.center .item img { transform: scale(1); -webkit-transform: scale(1); margin: 0}
+.meetSlider{margin-top: 46px}
+.innerTab span.txt{line-height: 20px}
+.topSlider .owl-prev{position: absolute;top: 0;bottom: 0;height: 30px; left:30px; margin: auto;text-indent: -80px; width: 30px;}
+.topSlider .owl-next{position: absolute;top: 0;bottom: 0; right:30px; height: 30px;margin: auto;text-indent: 80px;width: 30px;}
+.topSlider .owl-next::before { content: ''; position: absolute; width: 80%; height: 80%; border: 2px solid #FFF; display: block;transform: rotate(45deg);-webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg);-ms-transform: rotate(45deg);left: 0;top: 0;    border-bottom: none; border-left: none;}
+.topSlider .owl-prev::before { content: ''; position: absolute; width: 80%; height: 80%; border: 2px solid #FFF; display: block;transform: rotate(45deg);-webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg);-ms-transform: rotate(45deg);left: 0;top: 0;    border-top: none; border-right: none;}
+.navSec ul .submenu{width: 170px; margin: 0; position: absolute; left: 0; text-align: left; padding-top: 5px; display: none;}
+.navSec > ul > li:hover .submenu{display: block;}
+
+.navSec ul .submenu li{ text-align: left; width: 100%}
+.navSec ul .submenu li a{padding: 5px 10px;display: block; background: #007f3e;}
+.navSec ul .submenu li a:hover{background:#fff; color:#007f3e}
+
+
+/* login page */
+.subPagebanner{padding: 0}
+#loginBanner1{ background: url(../images/loginpageslider1.jpg) no-repeat center top / auto 100%; }
+.subPagebanner .imgSlider {min-height: 600px}
+.userLog{padding: 100px 0}
+.nofloat{float: none;margin: 0 auto}
+.txtfield{margin-bottom: 30px; font-family: 'Changa-Light'; position: relative;}
+.txtfield input{width: 100%; padding: 10px 20px; border: none; font-size: 18px; background: #e5f2eb}
+.userLog .customBtn, .registrationSec .customBtn{width: 100%; padding: 10px 0; font-size: 18px; transition: .3s all; -webkit-transition: .3s all}
+.relatedPass{margin-top: 15px}
+.relatedPass a{text-transform: uppercase; font-size: 18px; text-decoration: underline;}
+.relatedPass div:nth-child(2n){ text-align: right; }
+
+/* registration page */
+
+.txtfield input[type="checkbox"]{width: auto; float: left; width: 20px;height: 20px; position: relative; z-index: 1; opacity: 0;cursor: pointer;}
+.txtfield span{font-size: 18px; margin-left: 10px; position: relative;}
+.txtfield input[type="checkbox"] + span::before {content: ''; width: 20px; height: 20px; border: 1px solid #007f3e; display: block; position: absolute;top: 1px;left: -31px;}
+.txtfield input[type="checkbox"] + span::after {content: ''; width: 8px;height: 14px;border: 3px solid #007f3e; display: block; position: absolute;top: 2px;left: -25px;border-left: none;border-top: none;transform: rotate(45deg); -webkit-transform: rotate(45deg); display: none;}
+.txtfield input[type="checkbox"]:checked + span::after {display: block;}
+.trmcndmiddle{ padding-top: 10px; padding-bottom: 10px;}
+.txtfield select{width: 100%; border: none; -webkit-appearance:none; appearance:none; -ms-appearance:none; -moz-appearance:none; font-size: 18px; text-transform: uppercase; background: #e5f2eb url(../images/dropdown-arrow.png) no-repeat right 15px center / 20px; padding: 5px 20px}
+.txtfield select option{padding: 0px 20px}
+.txtfield .hasDatepicker{ background: #e5f2eb url(../images/calendra.png) no-repeat right 15px center;}
+.grey_color{ color: #ccc }
+.clntCont{font-size: 17px}
+.innerWrapper{margin-bottom: 40px; width: 100%; float: left;}
+.innerWrapper .globleHeading{margin-bottom: 30px}
+.innerWrapper .col-xs-6{margin-bottom: 10px}
+.profDetails li div:first-child{width:35%; font-size:14px;}
+.profDetails li div:last-child{width:65%; text-align:right; font-size:14px;}
+
+@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+.txtfield select{padding:10px 20px}
+.text-right{text-align: right;}
+}
+.ui-widget-header{/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e5f2eb+0,cce5d8+100 */
+background: #e5f2eb; /* Old browsers */
+background: -moz-linear-gradient(top, #e5f2eb 0%, #cce5d8 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #e5f2eb 0%,#cce5d8 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #e5f2eb 0%,#cce5d8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5f2eb', endColorstr='#cce5d8',GradientType=0 ); /* IE6-9 */}
+.ui-datepicker-title{color: #007f3e}
+.ui-datepicker-calendar{color: #007f3e}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{background: #e5f2eb; text-align: center;}
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight{background: #defeec; border: 1px solid #007f3e; color: #007f3e}
+.allError{margin-bottom: 20px; display: none; }
+.allError span{color: #fff; background: red; padding: 5px 15px; display: block;}
+.errorMsg{position: relative; bottom: 0; left: 0; display: none;}
+
+/* team structure page */
+
+.bannerMidSec h2 span{ font-family: 'Changa-Light';}
+.subTitle{text-align: center; text-transform: uppercase; font-size: 30px; width: 750px;margin: 0 auto;line-height: 30px; padding: 0 15px}
+.structureSec{margin: 20px 0; overflow: hidden;}
+
+.brdrbtm{ border-bottom: 1px solid #333; padding-bottom: 56px}
+.qualifyWay{padding: 0}
+.qualifyWay h3{margin-bottom: 30px}
+.qualifyWay h4{font-size: 18px; font-family:'Changa-Bold' }
+.qualifyWay p{font-size: 18px}
+.mobilemenu{display: none;}
+
+/* about us page */
+.middleSecfont{text-align: center; font-size: 30px}
+.bOfd{ background: #ccc }
+.bOfd .innerTab, .leagueSec .innerTab{ background: none; max-height:none; padding: 30px 0}
+.bOfd .innerTab span, .leagueSec .innerTab span{ font-size: 24px; color: #000 }
+.innerTab .txtname{ font-family: 'Changa-Bold'; margin-top: 20px;}
+.txtdeg{line-height: 24px;margin-bottom: 10px;}
+.nofloatblock{display: inline-block; float: none; vertical-align: top;}
+.uperCse{ text-transform: uppercase; font-size: 24px }
+.mrtp-30{margin-top: 30px}
+.mrtb-100{margin-bottom: 100px}
+.msnStmnt{ background: url(../images/msnstmnt.jpg) no-repeat center top / cover; }
+.msnStmnt p{font-size: 24px }
+.abtLeague .innerTab{ padding:0;min-height:none}
+.abtLeague .txthead{font-size: 24px;}
+.abtLeague .txt{text-transform: none; font-size: 14px}
+.setMid{display: inline-block; vertical-align: middle;}
+.abtLeague .innerTab::before {padding: 50% 0;content: ''; display: inline-block; vertical-align: middle; margin-left: -5px;}
+.abtLeague p{font-size: 24px; margin-bottom: 50px}
+
+/*  player application  */
+.globleHeadingh4{font-size: 18px; font-family:'Changa-Bold' }
+.globleHeadingh4 span{font-size: 14px; display: block;}
+.player-appli p{font-size: 18px}
+.mrt20b10{ margin: 20px 0 10px }
+.player-appli a.customBtn{position: absolute;left: 0;right: 0;bottom: 0;margin: auto;}
+
+/*  team  */
+.gloglebggray{background: #f2f2f2;}
+.teamSec .gloglebggray{margin-bottom: 40px; padding: 10px 0;}
+.teamSec .gloglebggray:last-child{margin-bottom: 0}
+.onImgtitle{ width: 200px; height: 200px; margin: 0 auto;padding: 0;text-align: center; font-size: 24px}
+.teamSec .globleHeading{text-align: left;}
+
+
+/*      FAQS    */
+.according .globleHeadingh4{position: relative; z-index: 1; margin: 0; padding: 10px 0; cursor: pointer;}
+.according .dropDwnArrow{ width:20px; height:20px; position:absolute; top: 10px;right: 15px; display: block; cursor: pointer;text-indent: -100%;
+    overflow: hidden;}
+.according .dropDwnArrow::before{content: ''; border:2px solid green; display: block;position: absolute;left: 0; right: 0; top: 0; bottom: 0; margin: auto;border-left: none;
+border-top: none;transform: rotate(45deg);-webkit-transform: rotate(45deg);width: 15px;height: 15px;}
+.according .dropDwnArrow + .accor{display: none;}
+.according .dropDwnArrow + .accor.active{display: block;}
+.brdrgreen{ border-bottom: 1px solid green; padding:5px 0}
+.according .active .dropDwnArrow{transform: rotate(180deg);-webkit-transform: rotate(180deg);}
+
+/*Pro Application Page*/
+.proAppli{margin-bottom: 50px}
+.proAppli h3{font-family:'Changa-Bold'}
+.formTab .customBtn{ display: inline-block; width: 170px }
+.formTab{margin: 50px 0}
+.formTab .customBtn.active{background:#fff; color: #007f3e; border-color: #007f3e; position: relative;}
+.formTab .customBtn.active::before{content:'';display: block; width: 15px; height: 15px; position: absolute; background: green; z-index: -1; bottom: -7px; left: 0; right: 0; margin: auto; transform: rotate(45deg); -webkit-transform: rotate(45deg);-o-transform: rotate(45deg);-moz-transform: rotate(45deg);-ms-transform: rotate(45deg);}
+#uploadBtn{position: absolute;top: 0;right: 15px;width: auto;padding: 6px 0; z-index: 2; opacity: 0; cursor: pointer;}
+.fileload .customBtn{position: absolute;right: 15px;top: 0;width: 310px;padding: 9px 0;}
+.upload:hover + .customBtn{border-color: #007f3e;background: #fff; color: #007f3e;}
+.txtfield textarea{width: 100%; border:none; background:#e5f2eb; height: 180px; padding: 10px 20px;}
+.addMore{margin-bottom: 30px; text-align: center;}
+.addMore .customBtn{width: auto; padding-left: 20px; padding-right: 20px}
+.entryCount{margin-bottom: 10px;}
+.entryCount::before{content: ''; width: 100%; height: 1px; background:green;display: block;margin-bottom: 10px;}
+.entrySec:first-child .entryCount::before, .liveRegistration, .onLineRegistration{display: none;}
+.liveRegistration.active, .onLineRegistration.active{display: block;}
+/* contect us*/
+.fntbold{font-family:'Changa-Bold'}
+.contectUs h3{margin-bottom: 50px;}
+.contectUs .customBtn{width: 100%; margin-bottom: 20px}
+/* end */
+.globleGray, .customBtn.globleGray:hover{background:#ccc; color: #000; border-color: transparent; cursor: default;}
+.flotnodis{width: 49%; float: none; display: inline-block;vertical-align: top}
+.abtPsl h3{font-family:'Changa-Bold'; font-size: 32px}
+.ui-datepicker .ui-datepicker-title select { font-size: 14px; padding: 3px; text-align: center;}
+.ui-widget-header .ui-icon{background:url(../images/nextprevArrow.png) no-repeat right top / 200% }
+.ui-icon-circle-triangle-w{background-position: left top !important}
+.ordrLst li {list-style-type: lower-alpha; margin-bottom:10px }
+.ordrLst li ul{padding-left:10px ;}
+.unordrLst li{list-style-type: initial;}
+.currentpageName{ text-transform: capitalize; font-size: 48px }
+.sponsorName{font-size: 20px; text-transform: uppercase; margin-bottom: 35px;}
+footer{overflow:hidden;}
+.profilePopup{width: 100%; height: 100%; left: 0; top: 0; position: fixed; z-index: 1000; display: none;}
+.overlay{width: 100%; height: 100%; top: 0; left: 0; position: absolute; background: rgba(0,0,0,0.8);}
+.contentArea{width: 600px;max-height: 480px;min-height: 400px;background:url(../images/grey_black.png) no-repeat right bottom/ 50px, url(../images/player_profilepopup.jpg) no-repeat center center / auto 100% #fff ; padding:15px; position: fixed;left: 50%;top: 50%;transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%); z-index: 2}
+.brdrGreen{border:5px solid #007f3e;}
+.NameTitle{width: 159px;background: #007f3e;margin: 5px auto;padding:5px;text-align: center;color: #fff;text-transform: uppercase;}
+.profDetails li{background: #bdbfbc; padding: 5px; margin-bottom: 5px; overflow: hidden;}
+.txtAreapopup{padding-right: 0}
+.txtAreapopup h3{font-family:'Changa-Bold'; font-size: 28px; color: #969495; text-transform: uppercase; margin: 0 0 5px; }
+.txtAreapopup p{color:#007f3e;}
+.cantMid{float: none; display: table-cell; vertical-align: middle;}
+.cantMid .imgSec img{width: 80%}
+.closeBtn{width: 25px; height: 25px; background: #fff; color: #000;position: absolute;text-align: center;right: -28px;top: -28px;cursor: pointer;font-size: 20px;
+line-height: 20px;z-index: 1;box-shadow: 0px 0px 3px #000;}
+.smallTxt{font-size: 10px}
+.smallBtn{padding: 0; width: 100px; margin-top: 10px }
+.myact {position: relative;}
+.myact .submenu{position: absolute; right: 5px; top:30px;background: #007f3e; display: none; width: 110px;z-index:999}
+.myact:hover .submenu{display: block;}
+.myact .submenu li:hover{background: #fff; color: #007f3e}
+.myact .submenu li{border: none; width: 100%}
+.twoLine label{display: block;}
+.teamsSlider{text-align: center;}
+.allteams .col-md-2{float: none;display: inline-block;}
+.owl-theme .owl-nav .owl-prev{position: absolute;left: -42px;top: 0;bottom: 0;height: 32px;margin: auto;}
+.owl-theme .owl-nav .owl-next{position: absolute;right: -42px;top: 0;bottom: 0;height: 32px;margin: auto;}
+a.zoomEffect{display: block;}
+.itmValue, .zoomEffect{transition: .3s all ease-out; -webkit-transition: .3s all ease-out}
+.zoomEffect:hover{transform: scale(1.04);-webkit-transform: scale(1.04);box-shadow: 0px 0px 10px #484848;position: relative;z-index: 2}
+.itmValue{display: block;transform: translateY(5px);-webkit-transform: translateY(5px);}
+.itmValue:hover{transform: translateY(0px);-webkit-transform: translateY(0px);}
+
+.newtb .newBtn{position: absolute;top: -15px;right: 5px;padding: 1px 5px !important;background: #a30000;border-radius: 4px;font-size: 11px;}
+/* responsive */
+
+@media only screen and (max-width: 1199px) {
+.innerTab{padding: 30px} 
+.meet-cpt .owl-carousel .active + .active .item img{margin-left: 14px}
+.meet-cpt .owl-carousel .active.center .item img{margin:0;}
+.meet-cpt .owl-carousel .active + .active + .active + .active .item img { margin-left: -14px;}
+.navSec ul{margin: 5px 0 0}
+.abtLeague .innerTab::before {padding: 74% 0;}
+.topSlider .owl-nav{display: none;}
+.navSec ul li a {padding: 5px 5px; font-size: 12px}
+.meetSlider{padding: 0 30px}
+.owl-theme .owl-nav .owl-prev{left: 0px; }
+.owl-theme .owl-nav .owl-next{right:0px}
+.loginSec ul{margin-bottom: 0}
+.header{padding: 25px 0 0;}
+}
+
+@media only screen and (max-width: 992px) {
+.innerTab { padding: 10px 5px;}
+.meet-cpt .owl-carousel .owl-item .item img {transform: scale(0.8); -webkit-transform: scale(0.8);}
+.meet-cpt .owl-carousel .active .item img{margin:0;}
+.meet-cpt .owl-carousel .active + .active .item img{margin:0; transform: scale(0.8); -webkit-transform: scale(0.8);}
+.meet-cpt .owl-carousel .active.center .item img{margin:0;transform: scale(1); -webkit-transform: scale(1);}
+.meet-cpt .owl-carousel .active + .active + .active + .active .item img { margin-left:0px;}
+.bannerMidSec h2{font-size: 60px; line-height: 60px}
+.abtpsl .globleHeading, .globleHeading  { margin-top: 0;}
+.rgstSec, .meet-cpt, .pslgall { padding: 56px 0;}
+.imgSlider{min-height: 600px;padding: 250px 0 0;}
+.navSec ul li a {padding:5px 3px; letter-spacing: 0}
+.bannerMidSec h2{margin-bottom: 80px}
+.bannerMidSec{width: 100%;}
+.userLog { padding: 56px 0;}
+.registrationSec{ padding: 56px 0 0;}
+.abtLeague{ text-align: left; }
+.abtLeague p.col-xs-12{text-align: center;}
+.abtLeague .col-xs-6{margin-bottom: 30px; float: left;}
+.abtLeague .innerTab::before { padding: 50% 0;}
+.innerTab .setMid span.txt{padding: 0 10px}
+.qualifyWay .col-xs-12{display: inline-block; float: none; margin-right: -5px; margin-bottom: 20px}
+.onImgtitle{width: 100%; height: auto; background-size: 100%}
+.header{padding-top: 20px}
+.hidesmdevice{display: none}
+.allteams .col-md-2{float: left;display: block;}
+.meetSlider{padding: 0 40px}
+.owl-theme .owl-nav .owl-prev{left: 10px; }
+.owl-theme .owl-nav .owl-next{right:10px}
+}
+@media only screen and (max-width: 767px) {
+.container{width: 100%;}
+body{overflow-x:hidden; overflow-y:auto;}
+/*#imgSlider2, #imgSlider1, #imgSlider4  {background-size: 100% auto;}*/
+.imgSlider { min-height: auto; padding: 50% 0 0;}
+.bannerMidSec{text-align: center; position: absolute; bottom: 0; left: 0; right: 0; margin: auto}
+.spclftAlgn{position:relative;bottom: 0; width: 100%; }
+.spclftAlgn .bannerMidSec h2{text-align: center; margin-bottom: 10px;}
+.spclftAlgn .bannerMidSec a{display: block; margin: auto;}
+.innerTab{min-height: 190px; margin-bottom: 30px}
+
+.rgstSec .col-xs-12{margin-bottom: 30px}
+.rgstSec .col-xs-12:last-child{margin-bottom: 0}
+.social{display: none;}
+.pslfeeds ul li ul li.feedtims{width: 20%}
+.pslfeeds ul li ul li.feedcnts{width: 70%}
+.abtpsl p{padding: 15px 0;}
+.header{padding: 15px 0 0}
+.logs li:first-child { border-right:none; position: relative;}
+.logs li a {padding: 0px 10px;}
+.logs li:last-child a{padding-right: 0}
+.logs li:first-child::after{content: ''; position: absolute; right: 0; top: 0; bottom: 0; height: 50%; width: 1px; margin: auto; background: #fff; }
+.topSlider .owl-nav{display: none;}
+.navSec ul li {color: #000; width: 100%; text-align: left;}
+.navSec ul{margin: 10px 0 0; background: #fff; padding: 5px 0;position: absolute;top: 58px;right:0; transition: .3s all; -webkit-transition: .3s all; width: 0; overflow-x: hidden;}
+.navSec ul li a {padding: 5px 10px; display: block; font-size: 14px}
+.navSec{margin: 0; overflow-x: hidden;}
+.mobilemenu{display: block; float: right; cursor: pointer;}
+.navSec ul.active{width: 250px}
+.navSec ul li:hover a{background: #e5f2eb;}
+.subPagebanner .bannerMidSec{color: #fff}
+.abtLeague .nofloatblock{float: left;}
+.abtLeague .innerTab::before{display: none}
+.abtLeague .col-xs-6{margin: 0}
+.abtLeague .innerTab{padding: 20px 10px}
+.subTitle{width: 100%}
+.mrtb-100{margin-bottom: 50px}
+.onImgtitle{width: 180px; margin-bottom: 20px}
+.bannerMidSec h2{margin-bottom: 25px}
+.flotnodis{width: 100%; float: left;}
+.navSec ul .submenu{position: relative; width: 100%; top: 0; background: #e0e0e0; padding: 0}
+.navSec ul .submenu li a{background:none;}
+.navSec ul .submenu li a:hover{color: #000; background:#e5f2eb;}
+.contentArea{width:96%; max-height:420px;}
+.imgProfile{width: 30%; float: left;padding: 10px;}
+.cantMid{float: left; width: 100%; padding: 0}
+.NameTitle, .cantMid .imgSec img{width: 100%}
+.profDetails{ float: left; width: 70%; padding: 10px }
+.closeBtn{right: 0}
+.currentpageName{text-align: center; margin-bottom: 0 }
+.navSec ul li a + span{display: block;position: absolute;right: 15px;top: 0;width:30px;height: 30px; text-align: center;font-size: 24px;line-height: 30px; z-index: 1; cursor: pointer;}
+.navSec ul li a + span::before{content: '+'; }
+.navSec ul li a + span.active::before{content: '-';}
+.navSec > ul > li:hover .submenu{display: none;}
+.dropListOpn.active + .submenu{display: block !important;}
+.customBtn{margin-bottom: 10px;}
+.ordrLst li, .unordrLst li{list-style-position: inside;}
+.myact .submenu{top: 20px;}
+.logs .myact .submenu li:first-child::after{display: none}
+.subPagebanner .imgSlider{min-height:200px;}
+.clntCont { font-size: 12px;}
+.twoLine label{display: inline-block;}
+.sponsorName{font-size: 12px; margin-bottom: 10px}
+.contentArea .contAreaScr{overflow: auto; height: 390px;}
+.newtb .newBtn{top: 0;right: 20px}
+}
+@media only screen and (max-width: 767px) and (orientation:landscape) {
+	.contentArea{min-height:auto;max-height: 250px;}
+	.contentArea .contAreaScr{height:220px;width:100%; overflow-y:auto;}
+}
+@media only screen and (max-width: 640px) {
+.meet-cpt .owl-carousel .active.center .item img{margin: 0 auto}
+.meet-cpt .owl-nav .owl-prev, .teamsSlider .owl-nav .owl-prev{position: absolute;left: 0;top: 0;bottom: 0;margin: auto;height: 36px;}
+.meet-cpt .owl-nav .owl-next, .teamsSlider .owl-nav .owl-next{position: absolute;right: 0;top: 0;bottom: 0;margin: auto;height: 36px;}
+
+
+.imgSlider {padding: 100% 0 0;}
+.subPagebanner #loginBanner1 { background: url(../images/loginpageslider1-mob.jpg) no-repeat center top / 100%;}
+.subPagebanner .imgSlider { padding: 40% 0 10%;}
+.txtfield input{padding: 10px; font-size: 18px}
+.txtfield{margin-bottom: 20px}
+.userLog .customBtn, .registrationSec .customBtn {padding: 10px 0; font-size: 18px;}
+.txtfield select{padding: 6px 10px; font-size: 18px; background-size: 20px}
+.trmcndmiddle { padding-top: 10px;  padding-bottom: 0;}
+.abtLeague .txthead { font-size: 24px; line-height: 20px; margin-bottom: 6px;}
+.footerNav li{width: 50%; float: left; font-size: 14px; text-align: left; padding: 0 0 5px}
+.registrationSec .addMore .customBtn{padding: 10px 20px}
+.proAppli { margin-bottom: 15px;}
+.formTab { margin: 15px 0 40px;}
+#uploadBtn, .fileload .customBtn{width: 140px}
+section, .rgstSec, .meet-cpt, .pslgall { padding: 30px 0;}
+.teams{padding-top: 0}
+.bannerMidSec{position: static;color: #000;}
+.txtAreapopup h3{font-size: 20px}
+
+}
+@media only screen and (max-width: 480px) {
+.bannerMidSec h2 { font-size: 32px; line-height: 32px;}
+.globleHeading {font-size: 28px;}
+.abtpsl p, .pslfeeds ul li, .msnStmnt p{font-size: 14px}
+.tabTitle{font-size: 24px}
+.relatedPass a{font-size: 14px}
+.imgProfile{width: 40%; float: left;padding:5px;}
+.profDetails{ float: left; width: 60%; padding:5px;}
+.profilePopup{font-size: 12px;}
+.currentpageName{font-size: 24px}
+}
+@media only screen and (max-width: 420px) {
+.innerTab { min-height: 150px;}
+.tabsec .innerTab img { height: 40px;}
+.innerTab .num {font-size: 30px;}
+.innerTab span.txt { line-height: 14px; font-size: 14px}
+.pslfeeds ul li ul li.feedcnts { width: 65%;}
+.pslfeeds ul li ul li.feedtims { width: 25%;}
+.abtpsl .customBtn{margin: 0; width: auto; padding: 10px 15px }
+
+.meet-cpt .owl-carousel .active.center .item img { transform: scale(0.9); -webkit-transform: scale(0.9);}
+.logs li a{letter-spacing: 1px}
+.mobilemenu {  width: 30px;}
+.setMid{display: block;}
+.abtLeague .innerTab{min-height: 200px}
+.middleSecfont{font-size: 24px}
+.formTab .customBtn{width: 145px; font-size: 16px}
+
+}
+
+
+.mentorTable{border:1px solid #000;margin-bottom: 10px;}
+.mentorTable td{padding:5px 20px; border-bottom:1px solid #000; border-right:1px solid #000;}
+.mentorTable td:last-child{border-right:none}
+.mentorTable tr:last-child td{border-bottom:none}
+
+/*remove*/
+/*#imgSlider1{background: #000 !important}*/

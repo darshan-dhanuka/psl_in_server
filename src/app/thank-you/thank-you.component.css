@@ -1,0 +1,7 @@
+.div{
+    background: url(/assets/img/banner.jpg) no-repeat center center fixed;
+    position: fixed;
+    width: 100%;
+    background-size: cover;
+    min-height: 100%;
+}
