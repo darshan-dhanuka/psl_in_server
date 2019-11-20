@@ -210,7 +210,7 @@ sendotp_func(phone) {
                 document.getElementById('loader_show').style.display = 'none';
                 alert("Registered Successfully..!!");
                 //this.login();
-                this.router.navigateByUrl('thank-you?utm_source='+this.param1+'&user_id='+result.user['id']+'&email='+this.email);
+                window.location.href = 'https://www.pokersportsleague.in/thank-you?utm_source='+this.param1+'&user_id='+result.user['id']+'&email='+this.email;
              },
              err => {
                 document.getElementById('loader_show').style.display = 'none';
