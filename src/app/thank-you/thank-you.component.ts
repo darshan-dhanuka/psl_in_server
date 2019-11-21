@@ -18,9 +18,9 @@ export class ThankYouComponent implements OnInit {
   }
 
   ngOnInit() {
-    /*setTimeout(() => {
+    setTimeout(() => {
       window.location.href = 'https://www.pokersportsleague.com//qualifier?email='+this.param1;
-    }, 4000);*/
+    }, 4000);
   }
 
 }
