@@ -577,12 +577,14 @@ public function pro_player_registration(Request $request)
          {
              $validator = Validator::make($request->json()->all() , [
              'uname' => 'required|unique:users',
+			 'phone' => 'required|unique:users', 
              ]);
          }
          else
          {
              $validator = Validator::make($request->json()->all() , [
              'uname' => 'required|unique:users',
+			 'phone' => 'required|unique:users', 
              ]);
          }
 

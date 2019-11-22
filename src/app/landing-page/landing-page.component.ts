@@ -223,7 +223,12 @@ sendotp_func(phone) {
                   // this.htmlStr = err.error.email[0];
                   document.getElementById('email_err').style.display = 'block';
                   //document.getElementById('otp_modal').style.display = 'block';
-                }else{
+                }
+				else if(err.error.phone)
+                {
+                  this.htmlStr = 'This phone number has already been used.';
+                }
+				else{
                   this.htmlStr = 'Something went wrong . Please try later.'
                 }
                 window.scroll(0,0);
